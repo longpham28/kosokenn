@@ -79,6 +79,9 @@ main {
   padding: 0px;
   margin: 0px;
   opacity: 0.9;
+  background: white;
+  z-index: 2;
+  height: 25vh;
 }
 
 .col-navbar li {
