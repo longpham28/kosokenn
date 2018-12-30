@@ -66,6 +66,7 @@ main {
 .col-button {
   display: none;
   margin: auto 1rem auto auto;
+  font-size: 1.5rem;
 }
 
 .col-navbar {
