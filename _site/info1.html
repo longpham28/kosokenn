@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 5vw;
+    display: flex;
+  }
+
+  .container>div {
+    width: 40%;
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .container:nth-child(2) {
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('https://static1.squarespace.com/static/543da081e4b0c26d0d70a589/t/55a55598e4b0aaa1cadf9093/1436898723676/?format=1500w');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .container:nth-child(1) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://tk.ismcdn.jp/mwimgs/e/f/1140/img_efa859577fc860c4502ece44fb400d32129973.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media only screen and (max-width:768px) {
+    .container {
+      justify-content: center !important;
+    }
+
+    .container>div {
+      width: 90%;
+    }
+  }
+
+  h2 {
+    color: #009688;
+    margin: 2rem;
+    color: white;
+
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .data_details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+
+  .data_details_row {
+    display: flex;
+    width: 100%;
+    color: #2c3e50;
+    ;
+    color: white;
+  }
+
+  .data_details_column {
+    margin: 1rem;
+    flex: 1;
+
+  }
+
+  .data_details_column:nth-child(1) {
+    text-align: right;
+    color: white;
+
+  }
+
+  .data_details_column:nth-child(2) {
+    text-align: left;
+    flex: 2;
+    color: #7f8c8d;
+    color: white;
+
+  }
+
+  .address {
+    color: white;
+  }
+
+  .address ul {
+    list-style-type: none;
+    padding-top: 0.5rem;
+  }
+
+  .address ul li {
+    color: hsl(0, 0%, 30%);
+    padding: 0.5rem;
+    color: white;
+  }
+</style>
+
+<body>
+  <nav>
+  </nav>
+  <ul class=" col-navbar">
+  </ul>
+  <main>
+    <div class="container">
+      <div class=" main_col data">
+        <h2>会社データ</h2>
+        <div class="data_details">
+          <div class="data_details_row">
+            <div class="data_details_column">法人名</div>
+            <div class="data_details_column">株式会社高等教育総合研究所</div>
+          </div>
+          <div class="data_details_row">
+            <div class="data_details_column">設立日</div>
+            <div class="data_details_column">2001年4月5日</div>
+          </div>
+          <div class="data_details_row">
+            <div class="data_details_column">資本金</div>
+            <div class="data_details_column">3,000万円</div>
+          </div>
+          <div class="data_details_row">
+            <div class="data_details_column">決算期</div>
+            <div class="data_details_column">2月末日</div>
+          </div>
+          <div class="data_details_row">
+            <div class="data_details_column">主要取引銀行</div>
+            <div class="data_details_column">株式会社みずほ銀行</div>
+          </div>
+          <div class="data_details_row">
+            <div class="data_details_column">役員・社員等 </div>
+            <div class="data_details_column">代表取締役社長 亀井信明</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="address">
+        <h2 style="text-align: center;">所在地・アクセス</h2>
+        <ul>
+          <li>〒102-0083　東京都千代田区麹町3-4-7 ビルディング啓6階</li>
+          <li>TEL 03-5214-0524　FAX 03-5214-0784</li>
+          <li style="color: white;">※地下鉄有楽町線「麹町」駅3番出口直結</li>
+          <li style="color: white;">※新宿通りの麹町四丁目交差点から、日テレ通りを市ヶ谷方向に１ブロック進み右手角</li>
+        </ul>
+
+        <ul>
+          <li>〒531-0072 大阪府大阪市北区豊崎5-2-2 三和豊崎第二ビル501号</li>
+          <li>TEL 06-6292-8338 FAX 06-6292-8339</li>
+          <li style="color: white;">※地下鉄御堂筋線「中津」駅１番出口から徒歩3分</li>
+        </ul>
+
+      </div>
+    </div>
+
+  </main>
+  <div class="footer">
+  </div>
+
+  <script src="js/nav.js"></script>
+</body>
+
+</html>

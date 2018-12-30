@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .job {
+    display: flex;
+    margin: 2vh auto;
+    justify-content: center;
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .job {
+      flex-direction: column;
+    }
+
+    .school>ul {
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+    }
+
+    .logo>* {
+      padding: 0;
+      margin: 0;
+    }
+
+    .fas,
+    .fab {
+      padding-bottom: 0.7rem;
+    }
+  }
+
+  .school {
+    flex: 1;
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: flext-start;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px 0 hsla(0, 0%, 0%, 0.1);
+    padding: 0;
+  }
+
+  .logo {
+    color: #009688;
+    margin: 0;
+    width: 100%;
+    padding: 1.5rem 1rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fas,
+  .fab {
+    font-size: 2rem;
+  }
+
+  .school>ul {
+    list-style-type: none;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    color: hsl(0, 0%, 50%);
+  }
+</style>
+
+<body>
+  <script></script>
+  <nav>
+  </nav>
+  <ul class=" col-navbar">
+  </ul>
+  <main>
+    <div class="jumbotron">
+      <div class="text-container">
+        <p class="manage">The managent</p>
+        <p class="text">for a learning society</p>
+      </div>
+    </div>
+    <div class="job">
+      <div class="school high_school">
+        <div class="logo">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>高等教育分野</h3>
+        </div>
+        <ul>
+          <li>中長期計画、将来構想</li>
+          <li>大学・学部・学科、専門学校の新設・改組</li>
+          <li>学生確保の見通し、卒業生の人材需要に関するニーズ調査</li>
+          <li>学生募集</li>
+          <li>入試問題、教材開発</li>
+          <li>学校法人の新設、合併、分割</li>
+          <li>競争的資金獲得</li>
+          <li>海外留学生受け入れ</li>
+        </ul>
+      </div>
+      <div class="school junior_school">
+        <div class="logo">
+          <i class="fas fa-school"></i>
+          <h3>初等中等教育分野</h3>
+        </div>
+        <ul>
+          <li>大学進学実績向上</li>
+          <li>学校の設立</li>
+        </ul>
+      </div>
+      <div class="school other">
+        <div class="logo">
+          <i class="fab fa-microsoft"></i>
+          <h3>その他、全般</h3>
+        </div>
+
+        <ul>
+          <li>教職員の紹介</li>
+          <li>教育全般に関する情報提供</li>
+          <li>教育講演、記事執筆</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <div class="footer">
+  </div>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
