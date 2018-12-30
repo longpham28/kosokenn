@@ -198,9 +198,43 @@
     padding-bottom: 2rem;
     color: hsl(0, 0%, 50%);
   }
+
+  .col-button {
+    display: none;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  .col-navbar {
+    display: none;
+    position: relative;
+    top: 8vh;
+    width: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .col-navbar li {
+    padding: 0.5rem 2rem;
+    margin: 0px;
+  }
+
+  .col-navbar .active {
+    height: 10vh;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .col-button {
+      display: block;
+    }
+  }
 </style>
 
 <body>
+  <script>
+  </script>
   <nav>
     <a class="nav-logo">Kosoken</a>
     <ul class="navbar">
@@ -209,7 +243,14 @@
       <li><a class="nav-link" href="#">弊社代表より</a></li>
       <li><a class="nav-link" href="#">教育情報発信</a></li>
     </ul>
+    <i class="col-button fas fa-bars"></i>
   </nav>
+  <ul class=" col-navbar">
+    <li><a class="nav-link" href="#">会社案内</a></li>
+    <li><a class="nav-link" href="#">事業内容</a></li>
+    <li><a class="nav-link" href="#">弊社代表より</a></li>
+    <li><a class="nav-link" href="#">教育情報発信</a></li>
+  </ul>
   <main>
     <div class="jumbotron">
       <div class="text-container">
@@ -260,7 +301,7 @@
       </div>
     </div>
   </main>
-
+  <script src="index.js"></script>
 </body>
 
 </html>
