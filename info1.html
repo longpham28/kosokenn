@@ -54,15 +54,16 @@
     }
 
     .address ul {
+      align-items: center;
       text-align: center;
     }
 
   }
 
-  h2 {
-    color: #009688;
-    margin: 2rem;
+  h3 {
     color: white;
+    margin: 2rem;
+    font-size: 1.3rem;
 
   }
 
@@ -115,8 +116,11 @@
 
   .address ul {
     list-style-type: none;
-    padding-top: 0.5rem;
-    margin: 0;
+    padding: 1rem 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
   }
 
   .address ul li {
@@ -124,6 +128,7 @@
     padding: 0.5rem 0;
     margin: 0;
     color: white;
+    width: 100%;
   }
 </style>
 
@@ -135,7 +140,7 @@
   <main>
     <div class="container">
       <div class=" main_col data">
-        <h2>会社データ</h2>
+        <h3>会社データ</h3>
         <div class="data_details">
           <div class="data_details_row">
             <div class="data_details_column">法人名</div>
@@ -167,20 +172,18 @@
 
     <div class="container">
       <div class="address">
-        <h2 style="text-align: center;">所在地・アクセス</h2>
+        <h3 style="text-align: center;">所在地・アクセス</h3>
         <ul>
           <li>〒102-0083　東京都千代田区麹町3-4-7 ビルディング啓6階</li>
           <li>TEL 03-5214-0524　FAX 03-5214-0784</li>
           <li style="color: white;">※地下鉄有楽町線「麹町」駅3番出口直結</li>
           <li style="color: white;">※新宿通りの麹町四丁目交差点から、日テレ通りを市ヶ谷方向に１ブロック進み右手角</li>
         </ul>
-
         <ul>
           <li>〒531-0072 大阪府大阪市北区豊崎5-2-2 三和豊崎第二ビル501号</li>
-          <li>TEL <span stlye="text-decoration:none; color: white;">06-6292-8338</span> FAX <span stlye="text-decoration:none; color: white;">06-6292-8339</span></li>
+          <li>TEL 06-6292-8338 FAX 06-6292-8339</li>
           <li style="color: white;">※地下鉄御堂筋線「中津」駅１番出口から徒歩3分</li>
         </ul>
-
       </div>
     </div>
 
