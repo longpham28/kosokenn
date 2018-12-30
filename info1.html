@@ -12,41 +12,60 @@
 </head>
 <style>
   .container {
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin: 0 auto;
     padding: 5vh 5vw;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
   }
 
   .container>div {
-    flex-basis: 35%;
+    width: 40%;
     margin: 0.5rem 0.5rem;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 4px 0 hsla(0, 0%, 0%, 0.1);
+    border: 1px solid white;
     padding: 0 2rem 2rem 2rem;
-    background-color: white;
+  }
+
+  .container:nth-child(2) {
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('https://static1.squarespace.com/static/543da081e4b0c26d0d70a589/t/55a55598e4b0aaa1cadf9093/1436898723676/?format=1500w');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .container:nth-child(1) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://tk.ismcdn.jp/mwimgs/e/f/1140/img_efa859577fc860c4502ece44fb400d32129973.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   @media only screen and (max-width:768px) {
     .container {
-      flex-direction: column;
+      justify-content: center !important;
+    }
+
+    .container>div {
+      width: 90%;
     }
   }
 
   h2 {
     color: #009688;
     margin: 2rem;
+    color: white;
+
   }
 
   .data {
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
 
 
@@ -54,7 +73,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 0.5rem
+    padding-top: 0.5rem;
   }
 
   .data_details_row {
@@ -62,21 +81,31 @@
     width: 100%;
     color: #2c3e50;
     ;
+    color: white;
   }
 
   .data_details_column {
     margin: 1rem;
     flex: 1;
+
   }
 
   .data_details_column:nth-child(1) {
     text-align: right;
+    color: white;
+
   }
 
   .data_details_column:nth-child(2) {
     text-align: left;
     flex: 2;
     color: #7f8c8d;
+    color: white;
+
+  }
+
+  .address {
+    color: white;
   }
 
   .address ul {
@@ -87,6 +116,7 @@
   .address ul li {
     color: hsl(0, 0%, 30%);
     padding: 0.5rem;
+    color: white;
   }
 </style>
 
@@ -126,26 +156,27 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="main_col">
-        <h2>所在地・アクセス</h2>
-        <div class="address">
-          <ul>【東京本社】
-            <li>〒102-0083　東京都千代田区麹町3-4-7 ビルディング啓6階</li>
-            <li>TEL 03-5214-0524　FAX 03-5214-0784</li>
-            <li style="color: hsl(0,0%,50%);">※地下鉄有楽町線「麹町」駅3番出口直結</li>
-            <li style="color: hsl(0,0%,50%);">※新宿通りの麹町四丁目交差点から、日テレ通りを市ヶ谷方向に１ブロック進み右手角</li>
-          </ul>
+    <div class="container">
+      <div class="address">
+        <h2 style="text-align: center;">所在地・アクセス</h2>
+        <ul>
+          <li>〒102-0083　東京都千代田区麹町3-4-7 ビルディング啓6階</li>
+          <li>TEL 03-5214-0524　FAX 03-5214-0784</li>
+          <li style="color: white;">※地下鉄有楽町線「麹町」駅3番出口直結</li>
+          <li style="color: white;">※新宿通りの麹町四丁目交差点から、日テレ通りを市ヶ谷方向に１ブロック進み右手角</li>
+        </ul>
 
-          <ul>【大阪支社】
-            <li>〒531-0072 大阪府大阪市北区豊崎5-2-2 三和豊崎第二ビル501号</li>
-            <li>TEL 06-6292-8338 FAX 06-6292-8339</li>
-            <li style="color: hsl(0,0%,50%);">※地下鉄御堂筋線「中津」駅１番出口から徒歩3分</li>
-          </ul>
+        <ul>
+          <li>〒531-0072 大阪府大阪市北区豊崎5-2-2 三和豊崎第二ビル501号</li>
+          <li>TEL 06-6292-8338 FAX 06-6292-8339</li>
+          <li style="color: white;">※地下鉄御堂筋線「中津」駅１番出口から徒歩3分</li>
+        </ul>
 
-        </div>
       </div>
     </div>
+
   </main>
   <div class="footer">
   </div>
