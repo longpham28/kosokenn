@@ -65,8 +65,7 @@ main {
 
 .col-button {
   display: none;
-  margin-left: auto;
-  margin-right: 1rem;
+  margin: auto 1rem auto auto;
 }
 
 .col-navbar {
