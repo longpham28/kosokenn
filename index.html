@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    z-index: 2;
+    opacity: 0.9;
+  }
+
+  .nav-logo {
+    text-decoration: none;
+    color: black;
+    margin-left: 2vw;
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    display: flex;
+    margin-left: auto;
+    flex-basis: 50%;
+    list-style-type: none;
+  }
+
+  .navbar>li {
+    flex: 1;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #636f7B;
+  }
+
+  .nav-link:hover {
+    color: #1C2024;
+    font-weight: 500;
+  }
+
+  main {
+    position: relative;
+    top: 10vh;
+
+  }
+
+  .jumbotron {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("http://www.ritsumei.ac.jp/image.jsp?id=277612");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-container {
+    color: white;
+    margin-left: auto;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: left;
+    flex-direction: column;
+  }
+
+  .text-container>* {
+    margin: 0;
+  }
+
+  .manage {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  .job {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 2vh auto;
+    justify-content: center;
+    grid-row-gap: 1vh;
+    grid-column-gap: 1vw;
+    width: 80%;
+  }
+
+  .school {
+    display: flex;
+    justify-content: flext-start;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px 0 hsla(0, 0%, 0%, 0.1);
+    padding: 0;
+  }
+
+  .logo {
+    color: #009688;
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .job_details {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .high_school {
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .junior_school {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .other {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .fas,
+  .fab {
+    font-size: 2rem;
+  }
+
+  .school>ul {
+    list-style-type: none;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    color: hsl(0, 0%, 29%);
+  }
+</style>
+
+<body>
+  <nav>
+    <a class="nav-logo">Kosoken</a>
+    <ul class="navbar">
+      <li><a class="nav-link" href="#">会社案内</a></li>
+      <li><a class="nav-link" href="#">事業内容</a></li>
+      <li><a class="nav-link" href="#">弊社代表より</a></li>
+      <li><a class="nav-link" href="#">教育情報発信</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="jumbotron">
+      <div class="text-container">
+        <p class="manage">The managent</p>
+        <p class="text">for a learning society</p>
+      </div>
+    </div>
+    <div class="job">
+      <div class="school high_school">
+        <div class="logo">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>高等教育分野</h3>
+        </div>
+        <ul>
+          <li>中長期計画、将来構想</li>
+          <li>大学・学部・学科、専門学校の新設・改組</li>
+          <li>学生確保の見通し、卒業生の人材需要に関するニーズ調査</li>
+          <li>学生募集</li>
+          <li>入試問題、教材開発</li>
+          <li>学校法人の新設、合併、分割</li>
+          <li>競争的資金獲得</li>
+          <li>海外留学生受け入れ</li>
+        </ul>
+      </div>
+      <div class="school junior_school">
+        <div class="logo">
+          <i class="fas fa-school"></i>
+          <h3>初等中等教育分野</h3>
+        </div>
+        <ul>
+          <li>大学進学実績向上</li>
+          <li>学校の設立</li>
+        </ul>
+
+      </div>
+      <div class="school other">
+        <div class="logo">
+
+          <i class="fab fa-microsoft"></i>
+          <h3>その他、全般</h3>
+        </div>
+
+        <ul>
+          <li>教職員の紹介</li>
+          <li>教育全般に関する情報提供</li>
+          <li>教育講演、記事執筆</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
