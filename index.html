@@ -106,8 +106,7 @@
   }
 
   .job {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     grid-template-rows: 1fr;
     margin: 2vh auto;
     justify-content: center;
@@ -116,7 +115,15 @@
     width: 80%;
   }
 
+  @media only screen and (max-width: 768px) {
+    .job {
+      flex-direction: column;
+    }
+  }
+
   .school {
+    flex: 1;
+    margin: 0.5rem 0.5rem;
     display: flex;
     justify-content: flext-start;
     align-items: center;
@@ -142,22 +149,6 @@
     grid-row: 1/2;
     font-weight: 300;
     text-align: center;
-  }
-
-  .high_school {
-
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .junior_school {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .other {
-    grid-column: 3/4;
-    grid-row: 2/3;
   }
 
   .fas,
