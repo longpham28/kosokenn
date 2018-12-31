@@ -44,6 +44,17 @@
     background-position: center;
   }
 
+  @media (min-width: 769px) {
+    .data:hover {
+      transform: scale(1.15) translateX(70%);
+    }
+
+    .address:hover {
+      transform: scale(1.15) translateX(-70%);
+
+    }
+  }
+
   @media only screen and (max-width:768px) {
     .container {
       justify-content: center !important;
@@ -63,6 +74,7 @@
     color: #009688;
     margin: 2rem;
     color: white;
+    font-size: 1.35rem;
 
   }
 
@@ -70,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    transition: all 1.5s;
   }
 
 
@@ -111,12 +123,14 @@
 
   .address {
     color: white;
+    transition: all 1.5s;
   }
 
   .address ul {
     list-style-type: none;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
     margin: 0;
+
   }
 
   .address ul li {

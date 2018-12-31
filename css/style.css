@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --main-color: #1976d2;
+}
 
 body {
   padding: 0px;
@@ -24,7 +27,7 @@ nav {
 
 .nav-logo {
   text-decoration: none;
-  color: black;
+  color: var(--main-color);
   margin-left: 2vw;
   font-family: "Courgette", cursive;
   font-size: 2rem;
