@@ -71,14 +71,13 @@ main {
 
 .col-navbar {
   display: none;
-  position: fixed;
+  position: relative;
   top: 8vh;
   width: 100%;
   left: 0;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  opacity: 0.9;
 }
 
 .col-navbar li {
