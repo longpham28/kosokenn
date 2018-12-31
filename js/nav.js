@@ -1,5 +1,4 @@
 const nav = document.querySelector('nav');
-const main = document.querySelector('main');
 nav.innerHTML = `<a href="index.html" class="nav-logo">Kosoken</a>
     <ul class="navbar">
       <li><a class="nav-link" href="info1.html">会社案内</a></li>
@@ -20,10 +19,8 @@ const menu = document.querySelector('.col-navbar');
 const colBut = document.querySelector('.col-button');
 
 function toggleNav() {
-    if (menu.style.display === "block") menu.style.display = "none";
-    else menu.style.display = "block";
-    if (main.style.top === "33vh") main.style.top = "8vh";
-    else main.style.top = "33vh";
+  if (menu.style.display === "block") menu.style.display = "none";
+  else menu.style.display = "block";
 }
 
 colBut.addEventListener('click', toggleNav);
